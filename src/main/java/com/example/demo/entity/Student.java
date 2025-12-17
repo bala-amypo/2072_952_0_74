@@ -34,7 +34,7 @@ public class Student{
      public LocalDate getDob(){
         return dob;
     }
-    public void setDob(String dob){
+    public void setDob(LocalDate dob){
         this.dob=dob;
     }
     public float getCgpa(){
