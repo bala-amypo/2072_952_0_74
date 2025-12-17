@@ -18,4 +18,8 @@ public class StudentController {
     public Student addStudent(@RequestBody Student student) {
         return studentService.postStudent(student);
     }
+    @GetMapping("/getall")
+    public List<Student>get(){
+        return studentService.getAllStudent();
+    }
 }
