@@ -12,9 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 @RestController
 public class StudentController{
     @Autowired
-    StudentSerivce service
+    StudentSerivce stdser
        @PostMapping ("/addStudent")
        public Student addStudent(@RequesBody Student st){
-        return service.
+        return stdser.postStudent(st);
        }
 }
