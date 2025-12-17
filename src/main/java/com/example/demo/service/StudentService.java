@@ -1,7 +1,7 @@
-package com.java.example.demo.service;
+package com.example.demo.service;
 
 import com.example.demo.entity.Student;
 
-public interface StudentService{
-     Student postStudent(Student st);
+public interface StudentService {
+    Student postStudent(Student st);
 }
