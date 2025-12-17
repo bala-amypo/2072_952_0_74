@@ -1,4 +1,5 @@
 package com.example.demo.service.impl;
+import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,4 +18,9 @@ public class StudentServiceImpl implements StudentService {
     public Student postStudent(Student st) {
         return stdrepo.save(st);
     }
+    @Override
+    public List<Student> getAllStudent(){
+         
+    }
+    
 }
