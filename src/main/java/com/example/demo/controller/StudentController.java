@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import java.util.*;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 
 
 import com.example.demo.entity.Student;
@@ -32,7 +33,7 @@ public class StudentController {
     }
     @PutMapping("/update/{id}")
     public String updateData(@PathVaraible Long id ,@RequesBody Student st){
-        return 
+        return studentService.updateData(id,st);
     }
 
 }
