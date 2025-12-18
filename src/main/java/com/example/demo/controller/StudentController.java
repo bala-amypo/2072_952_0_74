@@ -1,5 +1,5 @@
 package com.example.demo.controller;
-
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,7 +21,7 @@ public class StudentController {
     private StudentService studentService;
 
     @PostMapping("/addStudent")
-    public Student addStudent(@RequestBody Student student) {
+    public Student addStudent(@Valid @RequestBody Student student) {
         return studentService.postStudent(student);
     }
     @GetMapping("/getall")
