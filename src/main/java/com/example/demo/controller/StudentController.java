@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
-import java.util.List;
+import java.util.*;
 
 
 import com.example.demo.entity.Student;
@@ -26,7 +26,7 @@ public class StudentController {
         return studentService.getAllStudent();
     }(
     @GetMapping("/getbyId/{id}")
-    public Optional<Student> getbyId(@PathVariable Long id){
-        return Optional<Student> getbyId(id);
+    public Optional<Student> getById(@PathVariable Long id){
+        return Optional<Student> getById(id);
     }
 }
