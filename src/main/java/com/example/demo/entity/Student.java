@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 import java.time.LocalDate;
+import jakarta.validation.constraints.Max;
+
 
 import jakarta.persistence.*;
 
@@ -7,7 +9,9 @@ import jakarta.persistence.*;
 public class Student{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Max (value=67,message ="Your id should be less then 67 only ")
     private Long id;
+
     private String name;
     private String dept;
     private LocalDate dob;
