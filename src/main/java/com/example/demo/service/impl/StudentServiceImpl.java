@@ -31,7 +31,7 @@ public class StudentServiceImpl implements StudentService {
         boolean Status=stdrepo.existById(id);
         if(Status){
 
-        }else
+        }
     }
 
 }
