@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
+
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 
@@ -23,5 +24,9 @@ public class StudentController {
     @GetMapping("/getall")
     public List<Student>get(){
         return studentService.getAllStudent();
+    }(
+    @GetMapping("/getbyId/{id}")
+    public Optional<Student> getbyId(@PathVariable Long id){
+        return Optional<Student> getbyId(id);
     }
 }
