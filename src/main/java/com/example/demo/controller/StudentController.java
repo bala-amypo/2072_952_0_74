@@ -35,5 +35,6 @@ public class StudentController {
     public String updateData(@PathVariable Long id ,@RequestBody Student st){
         return studentService.updateData(id,st);
     }
+    @
 
 }
